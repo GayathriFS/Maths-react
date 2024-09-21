@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.add-numbers-container {
+  background-color: #ffe6cc;
+  border: 1px solid #ffd7be;
+  padding: 30px;
+  width: 350px;
+  margin: 70px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 25px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ff99cc;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff66b3;
+}
+
+h1 {
+  color: #666;
+  margin-top: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .add-numbers-container {
+    padding: 20px;
+    width: 80%;
+  }
+  input[type="number"] {
+    padding: 10px;
+  }
+  button[type="submit"] {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-numbers-container {
+    padding: 15px;
+    width: 90%;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  input[type="number"] {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  button[type="submit"] {
+    padding: 5px 10px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+}
